@@ -1,0 +1,14 @@
+services:
+  examen:
+    build: .
+    ports:
+      - "8080:3001"
+    environment:
+      HOST: 0.0.0.0
+      PORT: 3001
+      DATA_DIR: /app/backend/storage
+      ENGINE_MODE: sequential
+    volumes:
+      - progress:/app/backend/storage
+volumes:
+  progress:

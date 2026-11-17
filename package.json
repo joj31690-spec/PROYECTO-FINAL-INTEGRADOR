@@ -1,0 +1,17 @@
+{
+  "name": "examen-del-chaco",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/dev.mjs",
+    "dev:frontend": "vite --config frontend/vite.config.js",
+    "dev:backend": "node --env-file-if-exists=.env backend/server.mjs",
+    "build": "vite build --config frontend/vite.config.js",
+    "start": "node --env-file-if-exists=.env backend/server.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "engine": "node engine/cli.mjs"
+  },
+  "devDependencies": { "vite": "^7.3.0" },
+  "engines": { "node": ">=22.9" },
+  "packageManager": "pnpm@11.24.0"
+}
