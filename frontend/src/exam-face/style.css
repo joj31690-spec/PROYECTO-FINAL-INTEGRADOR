@@ -1,0 +1,13 @@
+.question-toolbar, .results-sheet .paper-top { position: relative; }
+.exam-face { position: absolute; left: 50%; top: 22px; transform: translate(-50%, -50%); width: var(--face-size); height: var(--face-size); pointer-events: none; }
+.exam-face-art { display: block; width: 100%; height: 100%; font-family: 'Apple Color Emoji', 'Segoe UI Emoji', 'Noto Color Emoji', sans-serif; font-size: var(--face-size); line-height: 1; text-align: center; }
+.exam-face-art img, .exam-face-art svg { display: block; width: 100%; height: 100%; object-fit: contain; }
+.results-sheet .paper-top .exam-face { top: 5px; }
+@media (max-width: 600px) {
+  .exam-face { width: var(--face-mobile-size); height: var(--face-mobile-size); }
+  .exam-face-art { font-size: var(--face-mobile-size); }
+  .question-toolbar { gap: 8px; }
+  .question-toolbar .exam-heading { margin-left: auto; max-width: 68px; font-size: 9px; gap: 3px; }
+  .question-toolbar .exam-heading > span:first-child { font-size: 8px; letter-spacing: .8px; }
+  .question-toolbar .question-count { margin-left: 0; font-size: 15px; }
+}
