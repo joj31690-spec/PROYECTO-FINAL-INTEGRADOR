@@ -1,6 +1,6 @@
 # Cultura Chaqueña
 
-**plataformaeducativo y laboratorio introductorio de computación paralela y distribuida.**
+**plataforma educativa y laboratorio introductorio de computación paralela y distribuida.**
 
 ## 1. Introducción y contextualización
 
