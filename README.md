@@ -1,6 +1,6 @@
 # Cultura Chaqueña
 
-**Videojuego educativo y laboratorio introductorio de computación paralela y distribuida.**
+**plataformaeducativo y laboratorio introductorio de computación paralela y distribuida.**
 
 ## 1. Introducción y contextualización
 
