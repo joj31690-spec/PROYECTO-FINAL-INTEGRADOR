@@ -3,7 +3,11 @@
   "category": "Historia",
   "title": "Historia 1",
   "topic": "Historia del Chaco boliviano",
+  "displayTitle": "Historia del\nChaco boliviano",
+  "shortTopic": "Chaco boliviano",
+  "brief": "Pon a prueba lo que sabes del Chaco boliviano. Sin apuntes, con curiosidad y un lápiz listo para empezar.",
   "difficulty": "Fácil",
+  "selection": { "randomQuestions": true, "shuffleOptions": true },
   "introduction": "El Chaco guarda una parte fundamental de la historia de Bolivia. Sus territorios fueron escenario de acontecimientos que marcaron profundamente al país y a sus habitantes. Esta primera evaluación pondrá a prueba tus conocimientos sobre algunos de los episodios más importantes de nuestra historia regional. Lee atentamente: tienes treinta segundos por pregunta.",
   "questions": [
     {
@@ -35,11 +39,46 @@
       "explanation": "Daniel Salamanca fue presidente de Bolivia entre 1931 y 1934. Durante su gobierno comenzó la Guerra del Chaco."
     },
     {
-      "id": "chaco-tarija",
-      "text": "¿En qué departamento boliviano se encuentra la provincia Gran Chaco?",
-      "options": [ { "id": "a", "text": "La Paz" }, { "id": "b", "text": "Oruro" }, { "id": "c", "text": "Tarija" }, { "id": "d", "text": "Potosí" } ],
+      "id": "chaco-boqueron",
+      "text": "¿Qué fortín fue escenario de una famosa batalla en 1932?",
+      "options": [ { "id": "a", "text": "Boquerón" }, { "id": "b", "text": "Ingavi" }, { "id": "c", "text": "Aroma" }, { "id": "d", "text": "Cancha Rayada" } ],
+      "correctOptionId": "a",
+      "explanation": "La batalla de Boquerón ocurrió en septiembre de 1932. Las tropas bolivianas defendieron el fortín durante un prolongado asedio paraguayo. Fue uno de los primeros grandes enfrentamientos de la Guerra del Chaco."
+    },
+    {
+      "id": "chaco-agua",
+      "text": "¿Qué recurso escaseaba durante la Guerra del Chaco?",
+      "options": [ { "id": "a", "text": "Carbón" }, { "id": "b", "text": "Oro" }, { "id": "c", "text": "Agua" }, { "id": "d", "text": "Sal" } ],
       "correctOptionId": "c",
-      "explanation": "La provincia Gran Chaco pertenece al departamento de Tarija. Su capital es Yacuiba y forma parte de la región chaqueña de Bolivia."
+      "explanation": "La falta de agua fue uno de los mayores problemas para los soldados durante la Guerra del Chaco. Las altas temperaturas, las largas distancias y las dificultades de abastecimiento hicieron que conseguir agua fuera esencial para la supervivencia de las tropas."
+    },
+    {
+      "id": "chaco-yacuiba",
+      "text": "¿Qué país disputó históricamente la frontera de Yacuiba con Bolivia?",
+      "options": [ { "id": "a", "text": "Brasil" }, { "id": "b", "text": "Paraguay" }, { "id": "c", "text": "Chile" }, { "id": "d", "text": "Argentina" } ],
+      "correctOptionId": "d",
+      "explanation": "Yacuiba fue objeto de una disputa de delimitación fronteriza entre Bolivia y Argentina. Los acuerdos posteriores permitieron mantener la localidad bajo soberanía boliviana, convirtiéndola en un punto importante para las relaciones fronterizas entre ambos países."
+    },
+    {
+      "id": "chaco-misiones",
+      "text": "¿Qué orden religiosa fundó numerosas misiones en el Chaco boliviano?",
+      "options": [ { "id": "a", "text": "Los jesuitas" }, { "id": "b", "text": "Los franciscanos" }, { "id": "c", "text": "Los benedictinos" }, { "id": "d", "text": "Los mercedarios" } ],
+      "correctOptionId": "b",
+      "explanation": "Los misioneros franciscanos establecieron numerosas misiones en el Chaco boliviano durante los períodos colonial y republicano. Estas misiones influyeron en la formación de asentamientos y en las relaciones entre las comunidades indígenas y otros sectores de la sociedad."
+    },
+    {
+      "id": "chaco-weenhayek",
+      "text": "¿Qué pueblo originario habita históricamente las riberas del río Pilcomayo?",
+      "options": [ { "id": "a", "text": "Weenhayek" }, { "id": "b", "text": "Uru-chipaya" }, { "id": "c", "text": "Aymara" }, { "id": "d", "text": "Kallawaya" } ],
+      "correctOptionId": "a",
+      "explanation": "El pueblo weenhayek habita históricamente zonas próximas al río Pilcomayo, en el Chaco boliviano. Su historia y sus formas de vida mantienen una estrecha relación con el río, especialmente a través de la pesca y el aprovechamiento de sus recursos naturales."
+    },
+    {
+      "id": "chaco-tratado-paz",
+      "text": "¿En qué ciudad se firmó el tratado de paz de 1938 entre Bolivia y Paraguay?",
+      "options": [ { "id": "a", "text": "Asunción" }, { "id": "b", "text": "La Paz" }, { "id": "c", "text": "Buenos Aires" }, { "id": "d", "text": "Montevideo" } ],
+      "correctOptionId": "c",
+      "explanation": "El Tratado de Paz, Amistad y Límites entre Bolivia y Paraguay fue firmado el 21 de julio de 1938 en Buenos Aires, Argentina. Este acuerdo se alcanzó tres años después del fin de los combates y estableció las bases para resolver definitivamente la disputa territorial."
     }
   ]
 }

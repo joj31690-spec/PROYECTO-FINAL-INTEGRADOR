@@ -1,0 +1,62 @@
+.result-envelope {
+  --kraft: #c5a16e;
+  --kraft-light: #d8b781;
+  --kraft-edge: #a7814d;
+  --paper-scale: .62;
+  --envelope-inset: 18%;
+  position: relative;
+  isolation: isolate;
+  width: min(100%, 820px, calc((100svh - 32px) * .86));
+  margin: auto;
+  overflow: clip;
+  overflow-clip-margin: 5px;
+}
+.result-envelope .results-sheet { width: 100%; margin: 0; transform-origin: top center; transform: translateY(31%) scale(var(--paper-scale)); }
+.envelope-paper { position: relative; z-index: 2; clip-path: inset(0 0 12% 0); pointer-events: none; }
+.result-envelope[data-state="closed"] .envelope-paper { visibility: hidden; }
+.result-envelope .results-sheet .review-navigation,
+.result-envelope .results-sheet .actions { visibility: hidden; }
+.envelope-caption { position: absolute; z-index: 6; top: 1%; left: 0; right: 0; text-align: center; }
+.envelope-caption h1 { color: #495044; font: 600 11px/1.5 'DM Sans', sans-serif; letter-spacing: 2px; margin: 0 0 8px; }
+.envelope-caption p { color: #5c5b50; font-size: 12px; margin: 0; }
+.envelope-back, .envelope-front, .envelope-flap { position: absolute; left: var(--envelope-inset); right: var(--envelope-inset); }
+.envelope-back {
+  top: 14%; bottom: 12%; z-index: 1;
+  background: linear-gradient(100deg, #b38a56, var(--kraft) 14%, #caaa78 85%, #b58d58);
+  border: 1px solid var(--kraft-edge);
+  box-shadow: 2px 4px 2px #93734624, 0 12px 24px #72552e20;
+}
+.envelope-front {
+  top: 28%; bottom: 12%; z-index: 3;
+  background-color: var(--kraft);
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 140 140' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='k'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.7' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Cpath d='M0 0h140v140H0z' fill='%23745a35' opacity='.1' filter='url(%23k)'/%3E%3C/svg%3E"), linear-gradient(95deg, #a27e4920, transparent 8%, #f6deac15 80%, #a27e4910);
+  border: 1px solid var(--kraft-edge);
+  border-top-color: #b38e59;
+  box-shadow: inset 2px 0 2px #ead2a52b, inset 0 -2px 2px #8e693b16;
+}
+.envelope-front:after { content: ''; position: absolute; bottom: 13px; left: 12px; right: 12px; height: 1px; background: #a6824e35; }
+.envelope-flap {
+  top: 14%; height: 19%; z-index: 4;
+  background: linear-gradient(170deg, var(--kraft-light), #ceaa74 75%, #b8925e);
+  clip-path: polygon(0 0, 100% 0, 50% 100%);
+  transform-origin: top center;
+  border-top: 1px solid #b18b57;
+}
+.wax-seal { position: absolute; z-index: 5; top: 32%; left: 50%; width: 36px; height: 36px; transform: translate(-50%, -50%); filter: drop-shadow(1px 2px 1px #62452b40); }
+.result-envelope[data-state="closed"] .wax-seal:before { content: ''; position: absolute; inset: 0; border-radius: 45% 53% 47% 51% / 51% 45% 54% 47%; background: #97382f; }
+.wax-fragment { position: absolute; inset: 0; border-radius: 45% 53% 47% 51% / 51% 45% 54% 47%; background: radial-gradient(ellipse at 35% 25%, #ae4d42, #97382f 55%, #802c26); box-shadow: inset 0 0 0 2px #722a2425, inset 0 1px 2px #e0a49135; }
+.wax-left { clip-path: polygon(0 0, 53% 0, 42% 28%, 58% 50%, 44% 72%, 53% 100%, 0 100%); }
+.wax-right { clip-path: polygon(53% 0, 100% 0, 100% 100%, 53% 100%, 44% 72%, 58% 50%, 42% 28%); }
+.wax-crack { position: absolute; inset: 0; width: 100%; height: 100%; fill: none; stroke: #53231e; stroke-width: 1; opacity: 0; }
+.envelope-open { position: absolute; z-index: 6; bottom: 1%; left: 50%; transform: translateX(-50%); white-space: nowrap; padding: 15px 30px; letter-spacing: 1px; font-size: 11px; }
+.result-envelope[data-state="opening"] .envelope-caption,
+.result-envelope[data-state="opening"] .envelope-open { visibility: hidden; }
+.result-envelope[data-state="opening"] .wax-seal { pointer-events: none; }
+.results-sheet h1[tabindex="-1"]:focus { outline: none; }
+@media (max-width: 600px) {
+  .result-envelope { --paper-scale: .92; --envelope-inset: 3%; }
+  .envelope-caption h1 { font-size: 10px; letter-spacing: 1.5px; }
+  .envelope-caption p { font-size: 11px; }
+  .wax-seal { width: 30px; height: 30px; }
+  .envelope-open { padding: 14px 24px; font-size: 10px; }
+}

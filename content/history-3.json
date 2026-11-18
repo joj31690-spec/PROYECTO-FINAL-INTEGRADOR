@@ -1,0 +1,83 @@
+{
+  "id": "historia-3",
+  "category": "Historia",
+  "title": "Historia 3",
+  "topic": "Los secretos de la historia chaqueña",
+  "displayTitle": "Los secretos de la\nhistoria chaqueña",
+  "shortTopic": "Historia chaqueña",
+  "difficulty": "Avanzado",
+  "brief": "Explora los episodios menos conocidos de nuestra región. Desde la resistencia de los pueblos originarios hasta los acontecimientos que transformaron las fronteras del Chaco.",
+  "selection": { "randomQuestions": true, "shuffleOptions": true },
+  "questions": [
+    {
+      "id": "chaco-kuruyuki",
+      "text": "¿En qué año ocurrió la batalla de Kuruyuki?",
+      "options": [ { "id": "a", "text": "1825" }, { "id": "b", "text": "1892" }, { "id": "c", "text": "1932" }, { "id": "d", "text": "1905" } ],
+      "correctOptionId": "b",
+      "explanation": "La batalla de Kuruyuki ocurrió el 28 de enero de 1892, en el actual departamento de Chuquisaca. En ella, las fuerzas del Estado boliviano derrotaron a combatientes guaraníes que resistían la expansión sobre sus territorios. Es uno de los acontecimientos más significativos de la historia del pueblo guaraní."
+    },
+    {
+      "id": "chaco-pitiantuta",
+      "text": "¿Qué laguna fue escenario de un incidente militar en junio de 1932?",
+      "options": [ { "id": "a", "text": "Laguna Colorada" }, { "id": "b", "text": "Laguna Alalay" }, { "id": "c", "text": "Laguna Concepción" }, { "id": "d", "text": "Laguna Chuquisaca o Pitiantuta" } ],
+      "correctOptionId": "d",
+      "explanation": "En junio de 1932, las fuerzas bolivianas ocuparon un fortín paraguayo situado junto a esta laguna, conocida como Chuquisaca en Bolivia y Pitiantuta en Paraguay. El incidente agravó las tensiones territoriales y contribuyó a la escalada militar que desembocó en la Guerra del Chaco."
+    },
+    {
+      "id": "chaco-noctenes",
+      "text": "¿Cómo se denominaba antiguamente a los weenhayek en varias fuentes misioneras?",
+      "options": [ { "id": "a", "text": "Noctenes" }, { "id": "b", "text": "Pacajes" }, { "id": "c", "text": "Urus" }, { "id": "d", "text": "Quechuas" } ],
+      "correctOptionId": "a",
+      "explanation": "Los misioneros y otros autores del siglo XIX utilizaron el nombre «noctenes» para referirse a poblaciones indígenas del Chaco boliviano actualmente conocidas como weenhayek. Este término histórico aparece en documentos sobre las comunidades del río Pilcomayo, aunque hoy se prefiere su propia denominación."
+    },
+    {
+      "id": "chaco-tarairi",
+      "text": "¿En qué año fue fundada la misión de La Purísima de Tarairí?",
+      "options": [ { "id": "a", "text": "1825" }, { "id": "b", "text": "1905" }, { "id": "c", "text": "1854" }, { "id": "d", "text": "1935" } ],
+      "correctOptionId": "c",
+      "explanation": "La misión franciscana de La Purísima Concepción de Tarairí fue fundada en 1854 por el padre José Gianelli. Formó parte de la expansión misionera en el Chaco boliviano durante el siglo XIX y tuvo importancia en las relaciones entre comunidades guaraníes, religiosos y pobladores de la región."
+    },
+    {
+      "id": "chaco-paralelo-yacuiba",
+      "text": "¿Qué paralelo intervino en la delimitación fronteriza de Yacuiba?",
+      "options": [ { "id": "a", "text": "Paralelo 10° sur" }, { "id": "b", "text": "Paralelo 22° sur" }, { "id": "c", "text": "Paralelo 30° sur" }, { "id": "d", "text": "Paralelo 15° norte" } ],
+      "correctOptionId": "b",
+      "explanation": "El paralelo 22° sur fue una referencia importante en los tratados de límites entre Bolivia y Argentina. Como la ubicación de Yacuiba planteaba dificultades para aplicar una frontera estrictamente recta, se acordó una rectificación que permitió mantener la población bajo soberanía boliviana."
+    },
+    {
+      "id": "chaco-vanguardia",
+      "text": "¿Qué fortín sufrió un ataque paraguayo en diciembre de 1928?",
+      "options": [ { "id": "a", "text": "Vanguardia" }, { "id": "b", "text": "Nanawa" }, { "id": "c", "text": "Toledo" }, { "id": "d", "text": "Saavedra" } ],
+      "correctOptionId": "a",
+      "explanation": "El 5 de diciembre de 1928, tropas paraguayas atacaron el fortín boliviano Vanguardia. El incidente provocó una grave crisis diplomática entre Bolivia y Paraguay, varios años antes del inicio de la guerra de 1932. Fue uno de los antecedentes más importantes del conflicto."
+    },
+    {
+      "id": "chaco-corralito",
+      "text": "¿Qué presidente fue derrocado durante el «Corralito de Villa Montes»?",
+      "options": [ { "id": "a", "text": "Ismael Montes" }, { "id": "b", "text": "Germán Busch" }, { "id": "c", "text": "José Luis Tejada Sorzano" }, { "id": "d", "text": "Daniel Salamanca" } ],
+      "correctOptionId": "d",
+      "explanation": "El 27 de noviembre de 1934, durante la Guerra del Chaco, un movimiento militar depuso al presidente Daniel Salamanca en Villa Montes. El acontecimiento se conoce como el «Corralito de Villa Montes». Después de su destitución, asumió la presidencia José Luis Tejada Sorzano."
+    },
+    {
+      "id": "chaco-canada-strongest",
+      "text": "¿Qué ejército obtuvo la victoria en Cañada Strongest en 1934?",
+      "options": [ { "id": "a", "text": "El ejército argentino" }, { "id": "b", "text": "El ejército paraguayo" }, { "id": "c", "text": "El ejército boliviano" }, { "id": "d", "text": "El ejército brasileño" } ],
+      "correctOptionId": "c",
+      "explanation": "La batalla de Cañada Strongest, librada en mayo de 1934, terminó con una importante victoria boliviana. Las fuerzas nacionales lograron cercar y derrotar a unidades paraguayas, proporcionando un significativo impulso moral durante una etapa difícil de la Guerra del Chaco."
+    },
+    {
+      "id": "chaco-aguairenda",
+      "text": "¿En qué año se fundó la misión de San Roque de Aguairenda?",
+      "options": [ { "id": "a", "text": "1851" }, { "id": "b", "text": "1892" }, { "id": "c", "text": "1905" }, { "id": "d", "text": "1932" } ],
+      "correctOptionId": "a",
+      "explanation": "La misión franciscana de San Roque de Aguairenda fue establecida en 1851 por el padre José Gianelli, en el actual Chaco tarijeño. Su fundación constituye un acontecimiento importante para la historia de las comunidades guaraníes de la zona y de los asentamientos vinculados a las misiones."
+    },
+    {
+      "id": "chaco-nobel-paz",
+      "text": "¿Qué diplomático recibió el Nobel de la Paz de 1936 por su labor relacionada con la Guerra del Chaco?",
+      "options": [ { "id": "a", "text": "José Félix Estigarribia" }, { "id": "b", "text": "Carlos Saavedra Lamas" }, { "id": "c", "text": "Enrique Peñaranda" }, { "id": "d", "text": "Hans Kundt" } ],
+      "correctOptionId": "b",
+      "explanation": "El diplomático argentino Carlos Saavedra Lamas recibió el Premio Nobel de la Paz en 1936 por su trabajo en favor de la paz internacional, incluida su mediación para terminar la Guerra del Chaco entre Bolivia y Paraguay. Fue el primer latinoamericano en recibir este reconocimiento."
+    }
+  ]
+}

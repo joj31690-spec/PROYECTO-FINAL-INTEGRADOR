@@ -3,3 +3,5 @@ frontend/dist/
 backend/storage/
 .env
 *.log
+docs/evidence/*
+!docs/evidence/.gitkeep

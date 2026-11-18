@@ -3,7 +3,8 @@ import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { spawnSync } from 'node:child_process';
 import { processBatch, prepareWork, evaluateUnit, consolidate } from '../engine/sequential.mjs';
-const exam = JSON.parse(readFileSync(new URL('../content/history-1.json', import.meta.url)));
+const bank = JSON.parse(readFileSync(new URL('../content/history-1.json', import.meta.url)));
+const exam = { ...bank, questions: bank.questions.slice(0, 5) };
 const evaluation = (id, correct = 5) => ({ evaluationId: id, examId: exam.id, answers: exam.questions.map((q, i) => ({ questionId: q.id, optionId: i < correct ? q.correctOptionId : null })) });
 const input = evaluations => ({ schemaVersion: '1', exams: [exam], evaluations });
 test('five stable questions, four options and valid answer keys', () => {

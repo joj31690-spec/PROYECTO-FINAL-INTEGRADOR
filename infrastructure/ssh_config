@@ -1,0 +1,8 @@
+Host master worker1 worker2
+    User hpc
+    IdentityFile /cluster/ssh/id_ed25519
+    UserKnownHostsFile /cluster/ssh/known_hosts
+    StrictHostKeyChecking yes
+    BatchMode yes
+    ConnectTimeout 5
+    LogLevel ERROR

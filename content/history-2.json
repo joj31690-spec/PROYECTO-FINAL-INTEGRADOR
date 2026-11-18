@@ -1,0 +1,83 @@
+{
+  "id": "historia-2",
+  "category": "Historia",
+  "title": "Historia 2",
+  "topic": "Historia del Chaco boliviano",
+  "displayTitle": "Historia del\nChaco boliviano",
+  "shortTopic": "Chaco boliviano",
+  "difficulty": "Medio",
+  "brief": "Explora la resistencia de los pueblos chaqueños, la historia de Villa Montes y los episodios que marcaron la Guerra del Chaco.",
+  "selection": { "randomQuestions": true, "shuffleOptions": true },
+  "questions": [
+    {
+      "id": "chaco-resistencia-guarani",
+      "text": "¿Qué pueblo indígena destacó por su resistencia a la expansión colonial en el Chaco?",
+      "options": [ { "id": "a", "text": "Los aymaras" }, { "id": "b", "text": "Los guaraníes" }, { "id": "c", "text": "Los uru-chipaya" }, { "id": "d", "text": "Los kallawayas" } ],
+      "correctOptionId": "b",
+      "explanation": "Los guaraníes, denominados chiriguanos en numerosas fuentes históricas, protagonizaron importantes procesos de resistencia frente al avance colonial y, posteriormente, frente a la expansión del Estado boliviano sobre sus territorios."
+    },
+    {
+      "id": "chaco-apiaguaiki",
+      "text": "¿Quién fue Apiaguaiki Tumpa?",
+      "options": [ { "id": "a", "text": "Un presidente boliviano" }, { "id": "b", "text": "Un explorador español" }, { "id": "c", "text": "Un líder de la resistencia guaraní" }, { "id": "d", "text": "Un comandante paraguayo" } ],
+      "correctOptionId": "c",
+      "explanation": "Apiaguaiki Tumpa fue un destacado líder guaraní que encabezó una rebelión contra el sometimiento y la pérdida de territorios indígenas. Su movimiento culminó en la batalla de Kuruyuki, en enero de 1892."
+    },
+    {
+      "id": "chaco-tapietes",
+      "text": "¿Qué pueblo indígena chaqueño sufrió desplazamientos durante la Guerra del Chaco?",
+      "options": [ { "id": "a", "text": "Los tapietes" }, { "id": "b", "text": "Los incas" }, { "id": "c", "text": "Los tiwanakotas" }, { "id": "d", "text": "Los pacajes" } ],
+      "correctOptionId": "a",
+      "explanation": "La Guerra del Chaco afectó gravemente a las comunidades tapietes que habitaban la región. El conflicto provocó desplazamientos y migraciones hacia distintas zonas de Bolivia, Argentina y Paraguay, separando comunidades y alterando sus formas tradicionales de vida."
+    },
+    {
+      "id": "chaco-mision-solano",
+      "text": "¿Qué misión franciscana dio origen a uno de los asentamientos de Villa Montes?",
+      "options": [ { "id": "a", "text": "San Ignacio de Moxos" }, { "id": "b", "text": "San Javier de Chiquitos" }, { "id": "c", "text": "Santa Ana de Velasco" }, { "id": "d", "text": "San Francisco Solano" } ],
+      "correctOptionId": "d",
+      "explanation": "La misión de San Francisco Solano fue fundada en 1860 a orillas del río Pilcomayo. Junto con la misión de San Antonio de Padua, formó parte de los antecedentes históricos de la actual ciudad de Villa Montes."
+    },
+    {
+      "id": "chaco-villamontes-nombre",
+      "text": "¿En honor a qué presidente boliviano recibió su nombre Villa Montes?",
+      "options": [ { "id": "a", "text": "Daniel Salamanca" }, { "id": "b", "text": "Ismael Montes" }, { "id": "c", "text": "Germán Busch" }, { "id": "d", "text": "José Manuel Pando" } ],
+      "correctOptionId": "b",
+      "explanation": "El nombre Villa Montes fue otorgado en homenaje al presidente boliviano Ismael Montes. En 1905 se estableció formalmente un centro civil y administrativo en la zona de las antiguas misiones franciscanas."
+    },
+    {
+      "id": "chaco-leocadio-trigo",
+      "text": "¿Qué personaje encabezó la fundación de Villa Montes en 1905?",
+      "options": [ { "id": "a", "text": "Simón Bolívar" }, { "id": "b", "text": "Antonio José de Sucre" }, { "id": "c", "text": "Leocadio Trigo" }, { "id": "d", "text": "Andrés de Santa Cruz" } ],
+      "correctOptionId": "c",
+      "explanation": "Leocadio Trigo, prefecto de Tarija y jefe de una comisión exploradora del río Pilcomayo, encabezó el acto de fundación de Villa Montes en agosto de 1905. Posteriormente, en diciembre de ese año, el gobierno de Ismael Montes formalizó su organización como centro civil y administrativo."
+    },
+    {
+      "id": "chaco-defensa-villamontes",
+      "text": "¿En qué año se produjo la importante defensa boliviana de Villa Montes?",
+      "options": [ { "id": "a", "text": "1935" }, { "id": "b", "text": "1928" }, { "id": "c", "text": "1932" }, { "id": "d", "text": "1938" } ],
+      "correctOptionId": "a",
+      "explanation": "En febrero de 1935, las fuerzas bolivianas resistieron una importante ofensiva paraguaya contra Villa Montes. Su defensa fue decisiva para impedir el avance enemigo hacia zonas estratégicas del sur de Bolivia durante la etapa final de la Guerra del Chaco."
+    },
+    {
+      "id": "chaco-campo-via",
+      "text": "¿Qué ocurrió con el ejército boliviano en Campo Vía en 1933?",
+      "options": [ { "id": "a", "text": "Firmó el tratado de paz" }, { "id": "b", "text": "Recuperó todo el Chaco Boreal" }, { "id": "c", "text": "Capturó al presidente paraguayo" }, { "id": "d", "text": "Sufrió un importante cerco y derrota" } ],
+      "correctOptionId": "d",
+      "explanation": "En diciembre de 1933, fuerzas paraguayas rodearon a importantes unidades bolivianas en Campo Vía. La derrota provocó la pérdida de numerosos soldados y material militar, y representó uno de los mayores reveses para Bolivia durante la guerra."
+    },
+    {
+      "id": "chaco-estigarribia",
+      "text": "¿Quién dirigió las fuerzas paraguayas en gran parte de la Guerra del Chaco?",
+      "options": [ { "id": "a", "text": "Hans Kundt" }, { "id": "b", "text": "José Félix Estigarribia" }, { "id": "c", "text": "Daniel Salamanca" }, { "id": "d", "text": "Germán Busch" } ],
+      "correctOptionId": "b",
+      "explanation": "José Félix Estigarribia fue uno de los principales comandantes del ejército paraguayo durante la Guerra del Chaco. Dirigió importantes operaciones militares y posteriormente llegó a ocupar la presidencia de Paraguay."
+    },
+    {
+      "id": "chaco-cese-hostilidades",
+      "text": "¿Qué día cesaron los combates de la Guerra del Chaco en 1935?",
+      "options": [ { "id": "a", "text": "21 de julio" }, { "id": "b", "text": "6 de agosto" }, { "id": "c", "text": "14 de junio" }, { "id": "d", "text": "25 de mayo" } ],
+      "correctOptionId": "c",
+      "explanation": "Bolivia y Paraguay firmaron un protocolo de paz el 12 de junio de 1935 en Buenos Aires. El cese efectivo de las hostilidades se produjo el 14 de junio, poniendo fin a los enfrentamientos militares después de casi tres años de guerra."
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+FROM ubuntu:22.04
+ENV DEBIAN_FRONTEND=noninteractive
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    gcc g++ libopenmpi-dev openmpi-bin openssh-server openssh-client \
+    iputils-ping procps time python3 nlohmann-json3-dev ca-certificates util-linux \
+    && rm -rf /var/lib/apt/lists/*
+RUN useradd -m -s /bin/bash hpc && usermod -p '*' hpc \
+    && mkdir -p /run/sshd /cluster/ssh /opt/cultura/bin \
+    && rm -f /etc/ssh/ssh_host_*
+COPY infrastructure/sshd_config /etc/ssh/sshd_config
+COPY infrastructure/ssh_config /etc/ssh/ssh_config.d/cluster.conf
+COPY infrastructure/entrypoint.sh /usr/local/bin/cluster-entrypoint
+COPY src /opt/cultura/src
+COPY data /opt/cultura/data
+COPY scripts/cluster /opt/cultura/scripts
+RUN g++ -std=c++17 -O2 -Wall -Wextra -fopenmp /opt/cultura/src/batch.cpp -o /opt/cultura/bin/batch \
+    && mpic++ -std=c++17 -O2 -Wall -Wextra -DOMPI_SKIP_MPICXX -DUSE_MPI /opt/cultura/src/batch.cpp -o /opt/cultura/bin/batch-mpi \
+    && gcc -O2 -Wall -Wextra -fopenmp /opt/cultura/src/smoke/openmp.c -o /opt/cultura/bin/smoke-openmp \
+    && mpic++ -O2 /opt/cultura/src/smoke/mpi.cpp -o /opt/cultura/bin/smoke-mpi \
+    && chmod 755 /usr/local/bin/cluster-entrypoint /opt/cultura/scripts/*.sh \
+    && chmod 644 /etc/ssh/ssh_config.d/cluster.conf /etc/ssh/sshd_config
+WORKDIR /opt/cultura
+ENTRYPOINT ["cluster-entrypoint"]

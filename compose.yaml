@@ -1,5 +1,21 @@
+name: cultura-chaquena
+
+x-node: &node
+  image: cultura-chaquena-node:local
+  pull_policy: never
+  networks: [cluster]
+  volumes:
+    - cluster-ssh:/cluster/ssh
+    - ./docs/evidence:/reports
+  healthcheck:
+    test: ["CMD-SHELL", "ssh-keyscan -T 2 127.0.0.1 >/dev/null 2>&1"]
+    interval: 5s
+    timeout: 4s
+    retries: 20
+  init: true
+
 services:
-  examen:
+  web:
     build: .
     ports:
       - "8080:3001"
@@ -10,5 +26,30 @@ services:
       ENGINE_MODE: sequential
     volumes:
       - progress:/app/backend/storage
+    networks: [web]
+  master:
+    <<: *node
+    hostname: master
+    pull_policy: build
+    build:
+      context: .
+      dockerfile: infrastructure/Dockerfile.node
+  worker1:
+    <<: *node
+    hostname: worker1
+    depends_on: [master]
+  worker2:
+    <<: *node
+    hostname: worker2
+    depends_on: [master]
+
+networks:
+  cluster:
+    driver: bridge
+    internal: true
+  web:
+    driver: bridge
+
 volumes:
   progress:
+  cluster-ssh:
